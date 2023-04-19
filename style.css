@@ -2,18 +2,15 @@ body {
     font-family: Arial, sans-serif;
 }
 
-#impress {
-    transform: translateY(-25%);
+ul li {
+    margin-bottom: 0.5em;
 }
 
 .step {
-    width: 300px;
-    height: 200px;
-    line-height: 200px;
-    font-size: 36px;
+    line-height: 1.15em;
+    font-size: 12px;
     text-align: center;
     border-radius: 5px;
-    border: 1px solid #ccc;
     color: #333;
 }
 
@@ -27,14 +24,14 @@ body {
 
 .content-box {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-grow: 1;
+    align-items: center;    
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 5px;
     border: 1px solid #ccc;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    padding: 10px;
+    padding: 3em;
+    width: 400px;
+    height: 247px;    
 }
 
 .content-box.above {
@@ -46,23 +43,23 @@ body {
 }
 
 .timeline-year {
-    font-size: 48px;
+    font-size: 36px;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 
-.timeline-line {
+.timeline-step:after {
+    content: "";
     position: absolute;
-    top: 50%;
-    left: 0;
-    height: 2px;
-    background-color: #333;
-    width: 100%;
+    width: 1000px;
+    height: 1px;
+    background-color: #000;
+    top: 250%;
+    left: -100%;
     z-index: -1;
 }
-
-.timeline-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
+  
+.timeline-step:last-child:after {
+  content: none;
 }
