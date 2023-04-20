@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Consolas, monaco, monospace;
 }
 
 ul li {
@@ -34,12 +34,20 @@ ul li {
     height: 247px;    
 }
 
-.content-box.above {
-    margin-bottom: 10px;
-}
-
 .content-box.below {
     margin-top: 10px;
+    text-align: left;
+}
+
+.content-box.below h1, h2 {
+    line-height: 1.5em;
+    margin: 0px;
+    font-size: 1.2em;
+}
+
+img.eoepca {
+    width: 900px;
+    height: 508px;
 }
 
 .timeline-year {
@@ -55,7 +63,7 @@ ul li {
     width: 1000px;
     height: 1px;
     background-color: #000;
-    top: 250%;
+    top: 0%;
     left: -100%;
     z-index: -1;
 }
